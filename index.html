@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For You ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    #yesBtn {
+      background: #ff4d6d;
+      color: white;
+      margin-right: 20px;
+    }
+
+    #noBtn {
+      background: white;
+      color: black;
+      position: absolute;
+    }
+
+    #yay {
+      display: none;
+      font-size: 36px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Romantic music starts when page opens -->
+  <audio id="romanticMusic" autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Dramatic music for YES -->
+  <audio id="dramaticMusic">
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+    <h1>Ishmeet, will you be my Valentine? 💕💖</h1>
+
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+
+    <div id="yay">Yayyyyy!! Best decision ever made 🎉🥳</div>
+  </div>
+
+  <script>
+    const noBtn = document.getElementById("noBtn");
+    c
